@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>找找看</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!--加载页面-->
+    <div class="page loading" style="display: none">
+        <p>加载中...</p>
+    </div>
+    <!--开始游戏页面    -->
+    <div class="page index" style="display: none">
+        <h1>找找看</h1>
+        <p class="tip">
+            找出所有色块里颜色不同的一个
+        </p>
+        <button class="start-game swirl-in-fwd">
+            开始游戏
+        </button>
+    </div>
+    <!--游戏中-->
+    <div class="page room" style="display: block;">
+        <div class="top">
+            <span class="score">得分：0</span>
+            <span class="time">60</span>
+            <span class="btn btn-pause">暂停</span>
+        </div>
+        <div id="box"></div>
+    </div>
+    <!--暂停-->
+    <div class="page pause">
+        <h1>游戏暂停</h1>
+        <button class="continue">
+            继续游戏
+        </button>
+    </div>
+    <!--游戏结束-->
+    <div class="page over">
+        <h1>游戏结束</h1>
+        <p class="result">
+            总分：0
+        </p>
+        <button class="restart">
+            重新开始
+        </button>
+    </div>
+    <script src="./jquery-1.8.3.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.music{
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    width: 10%;
+    z-index: 999;
+}
+/* 动画 */
+.music-play{
+    animation:  rotate 2s  linear infinite  ;
+    -moz-animation:  rotate 2s linear infinite; 
+    -webkit-animation:  rotate 2s linear infinite;
+    -o-animation:  rotate  2s linear  infinite;
+}
+@-webkit-keyframes rotate {
+    0%{transform: rotate(0deg)}	
+    100%{transform: rotate(360deg)}
+    
+}  
+
+
+#sst img{
+    width: 200px;
+}
